@@ -16,8 +16,8 @@ function 가위바위보(x :"가위" | "바위" | "보") :("가위" | "바위" |
 
 const 자료 = {
     name : "kim"
-}
+} as const
 function 내함수1(a :"kim"){
 
 }
-내함수(자료.name)
+내함수1(자료.name)

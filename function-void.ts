@@ -42,3 +42,5 @@ function 함수4(x) :void {
   if(charmScore === "상") score += 100
   if(score >= 600) return "결혼가능"
 }
+//let a :number | bigint = 3;
+//a + 1

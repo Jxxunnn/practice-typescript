@@ -6,6 +6,6 @@ function 함수5(param :string){
     }
 }
 
-let 함수11 = fucntion() {
+let 함수11 = function() {
     throw new Error()
 }

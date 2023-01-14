@@ -35,3 +35,5 @@ function calculateProbabilityOfMarriage(income, hasHouse, charmScore) {
     if (score >= 600)
         return "결혼가능";
 }
+//let a :number | bigint = 3;
+//a + 1

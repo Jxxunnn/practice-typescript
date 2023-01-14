@@ -28,5 +28,4 @@ function cleanNumberArray(array :(string | number)[]) : number[] {
         if(typeof item === "string") return parseInt(item)  
         else return item
     })
-
 }
