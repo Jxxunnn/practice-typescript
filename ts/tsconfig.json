@@ -4,5 +4,7 @@
     "module": "CommonJS",
     "strictNullChecks": true
     //   "strict": true
+    //    "declaration": true
+    //    "typeRoots": ["./types"]
   }
 }
