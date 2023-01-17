@@ -1,1 +1,1 @@
-type Age = number;
+type Age10 = number;

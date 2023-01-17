@@ -10,15 +10,10 @@ const user :StringOnly = {
     1 : 123
 }
 interface MyType {
-    "font-size" : {
-        "font-size" : {
-            "font-size" : number
-        }
-    }
-
+    "font-size" : MyType | number
 }
 
-const css = {
+const css :MyType = {
     "font-size" : {
         "font-size" : {
             "font-size" : 14
