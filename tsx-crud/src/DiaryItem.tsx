@@ -9,7 +9,6 @@ interface PropsType {
   onRemove: (targetId: number) => void;
   onEdit: (targetId: number, newContent: string) => void;
 }
-
 const DiaryItem = ({
   id,
   author,
@@ -89,4 +88,4 @@ const DiaryItem = ({
   );
 };
 
-export default DiaryItem;
+export default React.memo(DiaryItem);

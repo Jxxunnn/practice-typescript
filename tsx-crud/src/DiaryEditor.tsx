@@ -1,4 +1,10 @@
-import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
+import React, {
+  useState,
+  useRef,
+  ChangeEvent,
+  FormEvent,
+  useEffect,
+} from "react";
 
 interface PropsType {
   onCreate: (author: string, content: string, emotion: string) => void;
@@ -8,6 +14,10 @@ const DiaryEditor = ({ onCreate }: PropsType) => {
   const authorInput = useRef<HTMLInputElement>(null);
   const contentInput = useRef<HTMLTextAreaElement>(null);
   const [state, setState] = useState({ author: "", content: "", emotion: "1" });
+
+  useEffect(() => {
+    console.log("DiaryEditor Render");
+  });
 
   const handleChangeState = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -68,4 +78,4 @@ const DiaryEditor = ({ onCreate }: PropsType) => {
   );
 };
 
-export default DiaryEditor;
+export default React.memo(DiaryEditor);
